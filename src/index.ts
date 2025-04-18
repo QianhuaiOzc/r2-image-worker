@@ -30,7 +30,6 @@ export default {
 		const imageKey = path.substring('/images/'.length);
 
 		try {
-			// Get the object from R2
 			const object = await env.BUCKET.get(imageKey);
 
 			if (!object) {

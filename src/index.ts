@@ -36,7 +36,6 @@ export default {
 				return new Response('Image not found', { status: 404 });
 			}
 
-			// Get the image data
 			const data = await object.arrayBuffer();
 
 			// For R2 objects, we need to create a new Response with the transformed image
